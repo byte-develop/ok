@@ -1,7 +1,7 @@
 {
   "name": "okpool",
-  "private": true,
   "version": "0.0.0",
+  "homepage": ".",
   "type": "commonjs",
   "scripts": {
     "dev": "vite",

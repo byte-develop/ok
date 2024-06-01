@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Login() {
 
 	const postData = async (id, login) => {
-		await fetch('http://localhost:3001/users', {
+		await fetch('http://localhost:3001/api', {
 				method: 'POST',
 				headers: {
 						'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ export default function Login() {
 	}
 	
 	const getData = async () => {
-		const response = await fetch('http://localhost:3001/users')
+		const response = await fetch('http://localhost:3001/api')
 		const data = await response.json()
 		console.log(data)
 	}

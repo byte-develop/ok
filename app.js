@@ -35,7 +35,7 @@ bot.command('start', (ctx) => {
 });
 
 // Пример обработчика для записи данных в базу
-app.post('/users', (req, res) => {
+app.post('/api', (req, res) => {
 	const { id, login } = req.body
 	connection.query(
 		'INSERT INTO users (id, login) VALUES (?, ?)',
@@ -50,7 +50,7 @@ app.post('/users', (req, res) => {
 	)
 })
 
-app.get('/users', (req, res) => {
+app.get('/api', (req, res) => {
   const userId = req.query.id;
   connection.query('SELECT * FROM users WHERE id = ?', [userId], (err, results) => {
       if (err) {
