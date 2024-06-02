@@ -1,6 +1,7 @@
 {
 	"name": "okpool",
 	"version": "0.0.0",
+	"proxy": "http://localhost:3001",
 	"homepage": ".",
 	"type": "commonjs",
 	"scripts": {
@@ -42,6 +43,5 @@
 		"postcss": "^8.4.38",
 		"tailwindcss": "^3.4.3",
 		"vite": "^5.2.0"
-	},
-	"proxy": "http://okpool.ru"
+	}
 }
