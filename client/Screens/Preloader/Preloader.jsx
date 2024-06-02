@@ -9,7 +9,7 @@ export default function Preloader() {
     useEffect(() => {
         const fetchData = async (userId) => {
             try {
-                const response = await fetch(`http://localhost:3001/api?id=${userId}`);
+                const response = await fetch(`http://www.okpool.ru/api?id=${userId}`);
                 if (response.ok) {
                         setFoundId(true);
                 } else {
