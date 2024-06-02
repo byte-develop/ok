@@ -1,7 +1,7 @@
 {
 	"name": "okpool",
 	"version": "0.0.0",
-	"proxy": "http://localhost:3001",
+	"proxy": "https://okpool.ru",
 	"homepage": ".",
 	"type": "commonjs",
 	"scripts": {
