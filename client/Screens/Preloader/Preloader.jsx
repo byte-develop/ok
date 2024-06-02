@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { Navigate } from 'react-router-dom'
 import './Preloader.css'
 
 export default function Preloader() {
@@ -9,7 +9,7 @@ export default function Preloader() {
     useEffect(() => {
         const fetchData = async (userId) => {
             try {
-                const response = await fetch(`http://www.okpool.ru/api?id=${userId}`);
+                const response = await fetch(`http://109.71.247.72:3001/user?id=${userId}`);
                 if (response.ok) {
                         setFoundId(true);
                 } else {

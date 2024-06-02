@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Login() {
 
 	const postData = async (id, login) => {
-		await fetch('http://www.okpool.ru/api', {
+		await fetch('http://109.71.247.72:3001/user', {
 				method: 'POST',
 				headers: {
 						'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ export default function Login() {
 	}
 	
 	const getData = async () => {
-		const response = await fetch('http://www.okpool.ru/api')
+		const response = await fetch('http://109.71.247.72:3001/user')
 		const data = await response.json()
 		console.log(data)
 	}
